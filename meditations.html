@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Meditations · Mindful High</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="nav-inner">
+        <a class="brand" href="index.html">
+          <div class="brand-mark"></div>
+          <div class="brand-text">
+            <span class="brand-name">MINDFUL HIGH</span>
+            <span class="brand-tagline">Cannabis-friendly calm</span>
+          </div>
+        </a>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="meditations.html" aria-current="page">Meditations</a>
+          <a href="shop.html">Shop</a>
+          <a href="contact.html">Contact</a>
+          <a class="nav-cta" href="contact.html">Join the list</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="section-inner">
+          <div class="section-header">
+            <div class="section-kicker">Guided moments</div>
+            <h1 class="section-title">Micro-meditations for when you’re already high.</h1>
+            <p class="section-description">
+              These sessions are designed to be done while you’re elevated — short, friendly, and zero-pressure. 
+              Read them, listen to them (later, when we add audio), or simply use them as gentle prompts.
+            </p>
+          </div>
+
+          <div class="grid grid-3">
+            <article class="card">
+              <h3>Soft Landing · 6 minutes</h3>
+              <p>
+                A grounding entry ritual.  
+                One deeper breath, a slow exhale, three things you can feel, and one intention for the rest of your high.
+              </p>
+            </article>
+            <article class="card">
+              <h3>High Walks · 10–15 minutes</h3>
+              <p>
+                A simple walking meditation with prompts to notice textures, colors, and sounds instead of slipping into your head.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Night Reset · 8 minutes</h3>
+              <p>
+                A wind-down practice focused on unwinding tension from your jaw, shoulders, and belly so sleep actually feels possible.
+              </p>
+            </article>
+          </div>
+
+          <p class="section-description mt-lg">
+            More meditations are on the way. Join the email list to get new sessions and early access to audio when it’s ready.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span>© <span id="year"></span> Mindful High. All rights reserved.</span>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="meditations.html">Meditations</a>
+          <a href="shop.html">Shop</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
