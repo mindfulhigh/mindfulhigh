@@ -2,262 +2,171 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Mindful High</title>
+  <title>Mindful High · Cannabis-Friendly Mindfulness</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #050816;
-      color: #f9fafb;
-    }
-    header {
-      padding: 1.5rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      backdrop-filter: blur(12px);
-      background: rgba(5, 8, 22, 0.85);
-      border-bottom: 1px solid rgba(148, 163, 184, 0.25);
-    }
-    .logo {
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      font-size: 0.9rem;
-    }
-    nav a {
-      margin-left: 1.5rem;
-      font-size: 0.9rem;
-      text-decoration: none;
-      color: #e5e7eb;
-      opacity: 0.85;
-    }
-    nav a:hover {
-      opacity: 1;
-    }
-    .hero {
-      min-height: 80vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 4rem 1.5rem;
-    }
-    .hero-inner {
-      max-width: 900px;
-      text-align: center;
-    }
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.3rem 0.8rem;
-      border-radius: 999px;
-      border: 1px solid rgba(148, 163, 184, 0.6);
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      margin-bottom: 1.5rem;
-    }
-    .hero h1 {
-      font-size: clamp(2.5rem, 4vw, 3.5rem);
-      line-height: 1.1;
-      margin-bottom: 1rem;
-    }
-    .highlight {
-      background: linear-gradient(90deg, #a855f7, #ec4899, #f97316);
-      -webkit-background-clip: text;
-      color: transparent;
-    }
-    .hero p {
-      color: #9ca3af;
-      max-width: 640px;
-      margin: 0 auto 2rem;
-      line-height: 1.7;
-    }
-    .hero-actions {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-    .btn {
-      border-radius: 999px;
-      padding: 0.9rem 1.6rem;
-      font-size: 0.9rem;
-      border: 1px solid transparent;
-      cursor: pointer;
-      text-decoration: none;
-    }
-    .btn-primary {
-      background: linear-gradient(135deg, #a855f7, #ec4899);
-      color: white;
-      box-shadow: 0 18px 45px rgba(236, 72, 153, 0.45);
-    }
-    .btn-secondary {
-      border-color: rgba(148, 163, 184, 0.7);
-      color: #e5e7eb;
-      background: rgba(15, 23, 42, 0.8);
-    }
-    section {
-      padding: 4rem 1.5rem;
-    }
-    .section-inner {
-      max-width: 960px;
-      margin: 0 auto;
-    }
-    h2 {
-      font-size: 1.7rem;
-      margin-bottom: 1rem;
-    }
-    .grid {
-      display: grid;
-      gap: 1.8rem;
-    }
-    @media (min-width: 800px) {
-      .grid-3 {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-      }
-      .grid-2 {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-    }
-    .card {
-      border-radius: 1rem;
-      border: 1px solid rgba(148, 163, 184, 0.4);
-      background: radial-gradient(circle at top, rgba(148, 163, 184, 0.12), #020617);
-      padding: 1.5rem;
-    }
-    .card h3 {
-      font-size: 1.1rem;
-      margin-bottom: 0.5rem;
-    }
-    .muted {
-      color: #9ca3af;
-      font-size: 0.9rem;
-      line-height: 1.6;
-    }
-    footer {
-      border-top: 1px solid rgba(148, 163, 184, 0.4);
-      padding: 1.5rem;
-      font-size: 0.8rem;
-      text-align: center;
-      color: #9ca3af;
-    }
-  </style>
+  <meta name="description" content="Mindful High is a cannabis-friendly mindfulness space with soft rituals, micro-meditations, and cozy tools for intentional highs." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <div class="logo">MINDFUL HIGH</div>
-    <nav>
-      <a href="#method">Method</a>
-      <a href="#sessions">Sessions</a>
-      <a href="#shop">Shop</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <div class="page">
+    <header class="site-header">
+      <div class="nav-inner">
+        <a class="brand" href="index.html">
+          <div class="brand-mark"></div>
+          <div class="brand-text">
+            <span class="brand-name">MINDFUL HIGH</span>
+            <span class="brand-tagline">Cannabis-friendly calm</span>
+          </div>
+        </a>
+        <nav class="nav-links">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="about.html">About</a>
+          <a href="meditations.html">Meditations</a>
+          <a href="shop.html">Shop</a>
+          <a href="contact.html">Contact</a>
+          <a class="nav-cta" href="contact.html">Join the list</a>
+        </nav>
+      </div>
+    </header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-inner">
-        <div class="badge">Cannabis + Mindfulness · Intention over escape</div>
-        <h1>
-          Turn your <span class="highlight">high</span> into a practice.
-        </h1>
-        <p>
-          Mindful High is a cannabis-friendly wellness space for people who want more than just a buzz. 
-          Learn to pair intentional use with breathwork, reflection, and tiny rituals that actually support your life.
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#sessions">Explore guided sessions</a>
-          <a class="btn btn-secondary" href="#method">How it works</a>
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero-inner">
+          <div>
+            <div class="badge">
+              <span class="badge-dot"></span>
+              Slow, intentional highs only
+            </div>
+            <h1>Turn your <span class="highlight">high</span> into a practice.</h1>
+            <p class="hero-lead">
+              Mindful High is a cozy corner for people who use cannabis and also care about their nervous system, routines, and growth. 
+              We pair soft rituals, micro-meditations, and reflection with your high so it supports your life instead of blurring it.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="meditations.html">Explore guided moments</a>
+              <a class="btn btn-outline" href="shop.html">Browse ritual tools</a>
+            </div>
+          </div>
+
+          <aside class="hero-card">
+            <div class="hero-card-inner">
+              <div class="hero-card-pill">Tonight’s ritual preview</div>
+              <div class="hero-card-title">Soft Landing · 6-minute reset</div>
+              <p class="hero-lead" style="font-size: 0.85rem; max-width: none;">
+                One slow inhale, one small intention, one simple check-in with your body. 
+                No pressure to “fix” anything — just landing where you are.
+              </p>
+              <div class="hero-card-grid">
+                <div class="hero-chip">🌬  Box breathing prompts</div>
+                <div class="hero-chip">🧘‍♀️  Gentle body scan</div>
+                <div class="hero-chip">🕯  One tiny gratitude</div>
+                <div class="hero-chip">📝  60-second journal cue</div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- Method -->
+      <section class="section">
+        <div class="section-inner">
+          <div class="section-header">
+            <div class="section-kicker">The Mindful High Method</div>
+            <h2 class="section-title">Less mindless scrolling, more soft rituals.</h2>
+            <p class="section-description">
+              We’re not here to judge your use — we’re here to give it a container.
+              Think: warm lighting, a cup of water, one grounding breath, and a simple prompt that turns “getting high” into “showing up for yourself.”
+            </p>
+          </div>
+          <div class="grid grid-3">
+            <article class="card">
+              <h3>01 · Intention</h3>
+              <p>
+                Before you use, you name what you’re hoping for: unwind, connect, process, or create. 
+                Your intention is the gentle steering wheel for your high.
+              </p>
+            </article>
+            <article class="card">
+              <h3>02 · Grounding</h3>
+              <p>
+                Short, calming practices keep you anchored: breath work, body scans, cozy walks, or music checks that meet you where you’re at.
+              </p>
+            </article>
+            <article class="card">
+              <h3>03 · Integration</h3>
+              <p>
+                We close each session with one tiny action: a note to tomorrow-you, a glass of water, a micro-promise — so the calm travels with you.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Highlights -->
+      <section class="section">
+        <div class="section-inner">
+          <div class="section-header">
+            <div class="section-kicker">What you’ll find here</div>
+            <h2 class="section-title">Cozy tools for an intentional high.</h2>
+          </div>
+          <div class="grid grid-3">
+            <article class="card">
+              <h3>Micro-meditations</h3>
+              <p>
+                Tiny practices you can do while you’re already high — designed to calm, not overwhelm.
+              </p>
+            </article>
+            <article class="card">
+              <h3>High-friendly journaling</h3>
+              <p>
+                Gentle prompts that don’t feel like homework, just quick check-ins with your mind and body.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Ritual objects</h3>
+              <p>
+                Intention bracelets, cards, and soft visuals that remind you that your high is a sacred little pause in your day.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="section">
+        <div class="section-inner centered-text">
+          <div class="section-kicker">Newsletter</div>
+          <h2 class="section-title">Mindful High Notes</h2>
+          <p class="section-description">
+            A calm little email with micro-rituals, journal cues, and cozy ideas for more intentional highs — sent occasionally, not constantly.
+          </p>
+          <form class="form mt-md" action="https://example.com" method="post">
+            <div class="form-row">
+              <label for="email">Email address</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            </div>
+            <button class="btn btn-primary mt-sm" type="submit">Join the list</button>
+          </form>
+          <p class="section-description mt-sm" style="font-size: 0.8rem;">
+            No spam, ever. Just gentle reminders and soft ideas.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span>© <span id="year"></span> Mindful High. All rights reserved.</span>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="meditations.html">Meditations</a>
+          <a href="shop.html">Shop</a>
+          <a href="contact.html">Contact</a>
         </div>
       </div>
-    </section>
-
-    <section id="method">
-      <div class="section-inner">
-        <h2>The Mindful High Method</h2>
-        <p class="muted">
-          Mindful High isn’t about using more. It’s about using with intention, awareness, and respect for your body and mind.
-        </p>
-        <div class="grid grid-3" style="margin-top: 2rem;">
-          <div class="card">
-            <h3>1. Set</h3>
-            <p class="muted">
-              Choose your intention before you take a hit: relax, reflect, connect, create. Your high follows your focus.
-            </p>
-          </div>
-          <div class="card">
-            <h3>2. Ground</h3>
-            <p class="muted">
-              Simple breathwork, body scans, and grounding practices keep you present instead of scattered or anxious.
-            </p>
-          </div>
-          <div class="card">
-            <h3>3. Integrate</h3>
-            <p class="muted">
-              Turn moments into micro-shifts: a note in your journal, a tiny promise to future you, a new habit you actually try.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="sessions">
-      <div class="section-inner">
-        <h2>Guided Mindful High Sessions</h2>
-        <div class="grid grid-3" style="margin-top: 2rem;">
-          <div class="card">
-            <h3>Soft Landing</h3>
-            <p class="muted">
-              A 10-minute grounding ritual to start your high gently: breath, posture, and one simple intention.
-            </p>
-          </div>
-          <div class="card">
-            <h3>High Walks</h3>
-            <p class="muted">
-              Walking prompts for solo or partner strolls: notice, appreciate, and reconnect with your body and environment.
-            </p>
-          </div>
-          <div class="card">
-            <h3>Night Reset</h3>
-            <p class="muted">
-              A wind-down sequence to bring your nervous system back to neutral so you actually rest after using.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="shop">
-      <div class="section-inner">
-        <h2>Mindful High Shop (coming soon)</h2>
-        <p class="muted">
-          Curated pieces that support your high-ritual: Kandi bracelets, journals, ritual cards, and cozy gear for night-ins.
-          Sign up below to be the first to know when we launch.
-        </p>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="section-inner">
-        <h2>Stay in the loop</h2>
-        <p class="muted">
-          Mindful High is just getting started. Drop your email and we’ll send occasional updates — no spam, just intention.
-        </p>
-        <p class="muted">
-          📩 Email: hello@mindfulhigh.app
-        </p>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    © <span id="year"></span> Mindful High. All rights reserved.
-  </footer>
+    </footer>
+  </div>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
