@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About · Mindful High</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="nav-inner">
+        <a class="brand" href="index.html">
+          <div class="brand-mark"></div>
+          <div class="brand-text">
+            <span class="brand-name">MINDFUL HIGH</span>
+            <span class="brand-tagline">Cannabis-friendly calm</span>
+          </div>
+        </a>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html" aria-current="page">About</a>
+          <a href="meditations.html">Meditations</a>
+          <a href="shop.html">Shop</a>
+          <a href="contact.html">Contact</a>
+          <a class="nav-cta" href="contact.html">Join the list</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="section-inner">
+          <div class="section-header">
+            <div class="section-kicker">About Mindful High</div>
+            <h1 class="section-title">A softer way to be high.</h1>
+            <p class="section-description">
+              Mindful High was created for people who enjoy cannabis and also care deeply about their mental health, bodies, and routines.
+              It’s not about being perfect. It’s about having a few gentle tools you can reach for when you’re elevated.
+            </p>
+          </div>
+
+          <div class="grid grid-2">
+            <article class="card">
+              <h3>Why this exists</h3>
+              <p>
+                For many of us, the high is where we finally slow down — but that can easily turn into zoning out, doom-scrolling, or feeling anxious.
+                Mindful High is a little reminder that this time can be nourishing, creative, and kind to your nervous system.
+              </p>
+            </article>
+            <article class="card">
+              <h3>What we believe</h3>
+              <p>
+                Cannabis is not a personality. You are. We believe in intentional use, informed choice, and tiny sustainable changes. 
+                No guilt trips, no shame, no guru energy — just small practices that feel realistic in real life.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span>© <span id="year"></span> Mindful High. All rights reserved.</span>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="meditations.html">Meditations</a>
+          <a href="shop.html">Shop</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
