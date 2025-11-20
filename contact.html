@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact · Mindful High</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="nav-inner">
+        <a class="brand" href="index.html">
+          <div class="brand-mark"></div>
+          <div class="brand-text">
+            <span class="brand-name">MINDFUL HIGH</span>
+            <span class="brand-tagline">Cannabis-friendly calm</span>
+          </div>
+        </a>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="meditations.html">Meditations</a>
+          <a href="shop.html">Shop</a>
+          <a href="contact.html" aria-current="page">Contact</a>
+          <a class="nav-cta" href="contact.html">Join the list</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="section-inner">
+          <div class="section-header">
+            <div class="section-kicker">Contact</div>
+            <h1 class="section-title">Say hi to Mindful High.</h1>
+            <p class="section-description">
+              Questions, collaborations, or ideas for rituals you’d love to see? Send a note below.
+            </p>
+          </div>
+
+          <form class="form" action="mailto:hello@mindfulhigh.app" method="post" enctype="text/plain">
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required />
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Share what you’re thinking…"></textarea>
+            </div>
+            <button class="btn btn-primary mt-sm" type="submit">Send message</button>
+          </form>
+
+          <p class="section-description mt-md">
+            Or email directly: <strong>hello@mindfulhigh.app</strong>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span>© <span id="year"></span> Mindful High. All rights reserved.</span>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="meditations.html">Meditations</a>
+          <a href="shop.html">Shop</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
